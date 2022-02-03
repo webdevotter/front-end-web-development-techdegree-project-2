@@ -3,26 +3,31 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Responsive Website</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Work+Sans:ital,wght@0,300;0,700;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header class="main-header">
-        <div class="containter">
+        <div class="container">
             <h1 class="name"><a href="#">Larry Rhodes</a></h1>
             <ul class="main-nav">
                 <li><a href="#">HOME</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">CERTIFICATES</a></li>
-                <li><a href="#">CONTACT</a></li>
+                <li><a href="#portfolio">PORTFOLIO</a></li>
+                <li><a href="#certificates">CERTIFICATES</a></li>
+                <li><a href="#contact">CONTACT</a></li>
             </ul>
         </div>
     </header>
 
-    <div class="container">
+    <div class="container" id="introduction">
         <img src="images/responsive-layout-profile.png">
         <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
-        
-        <h3><strong>PORTFOLIO</strong></h3>
+    </div>
+    
+    <div class="container">
+        <h3 id="portfolio"><a id="portfolio"><strong>PORTFOLIO</strong></a></h3>
 
         <img src="images/portfolio-1.png">
         <h2>Marketing Page</h2>
@@ -48,28 +53,36 @@
         <h2>Calculator</h2>
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
     </div>
-    <div class="container">
-        <h3><strong>PROFESSIONAL CERTIFICATES</strong></h3>
 
+    <div class="container">
+        <h3 id="certificates"><a id="certificates"><strong>PROFESSIONAL CERTIFICATES</strong></a></h3>
+
+        <img src="images/certificate-3.png">
         <h2>Google UX Design Professional Certificate</h2>
+        <p>Completed seven courses, developed by Google, that included hands-on, practice-based assessments designed to prepare for an introductory-level role in UX design. Can complete the design process from beginning to end: empathizing with users, defining their pain points, coming up with ideas for design solutions, creating wireframes and prototypes, and testing designs to get feedback.</p>
         
-        <h2>Google IT Support Professional Certificate</h2>        
+        <img src="images/certificate-2.png">
+        <h2>Google IT Support Professional Certificate</h2>
+        <p>Completed five-courses, developed by Google, that included hands-on, practice-based assessments designed to prepare for an entry-level role in IT support. Competent in foundational skills, including troubleshooting and customer service, networking, operating systems, system administration, and security.</p>        
         
+        <img src="images/certificate-1.png">
         <h2>Google Data Analytics Professional Certificate</h2>
+        <p>Completed eight courses, developed by Google, that included hands-on, practice-based assessments designed to prepare for an introductory-level role in Data Analytics. Competent in tools and platforms including spreadsheets, SQL, Tableau, and R. Able to prepare, process, analyze, and share data for thoughtful action.</p>
         
     </div>
 </body>
 
-<footer>
-    <h3>CONTACT</h3>
+<footer class="main-footer">
+    <h3 id="contact"><a id="contact">CONTACT</a></h3>
     <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
     <p>Phone +1 (573) 576-9599</p>
     <p>Email <a href="mailto:webdevotter@gmail.com?subject=Front-End%20Developer%20Portfolio">webdevotter@gmail</a></p>
 
-    <p>Student name</p>
-    <p>BACK TO TOP</p>
+    <hr>
 
+    <p><strong>Student name</strong></p>
+    <p><strong>BACK TO TOP</strong></p>
 </footer>
 
 </hmtl>

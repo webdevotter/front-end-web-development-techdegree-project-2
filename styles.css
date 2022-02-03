@@ -1,0 +1,47 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.6;
+    color: black; 
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a {
+    text-decoration: none;    
+}
+
+p {
+    font-size: .95em;
+    margin-bottom: 1.8em
+}
+.main-footer {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+#introduction {
+    background-color: #f7f7f7;
+    margin-top: 0;
+}
+
+.container { 
+    text-align: center;
+}
+
+hr {
+    width: 90%;
+}
+
+img {
+    max-width:100%;
+}
+
+ 
