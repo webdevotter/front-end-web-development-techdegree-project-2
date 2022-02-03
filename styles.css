@@ -3,7 +3,6 @@
 }
 body {
     font-family: 'Quicksand', sans-serif;
-    font-family: 'Work Sans', sans-serif;
     line-height: 1.6;
     color: black; 
     margin: 0;
@@ -14,22 +13,20 @@ ul {
     padding: 0;
     list-style: none;
 }
-a {
-    text-decoration: none;    
-}
 
 p {
     font-size: .95em;
     margin-bottom: 1.8em
 }
-.main-footer {
-    background-color: #f7f7f7;
-    text-align: center;
+h2, h3, a {
+    color: black;
 }
 
-#introduction {
+a {
+    text-decoration: none;
+}
+.main-header, #introduction, .main-footer {
     background-color: #f7f7f7;
-    margin-top: 0;
 }
 
 .container { 
@@ -43,5 +40,58 @@ hr {
 img {
     max-width:100%;
 }
+/*---navigation---*/
 
- 
+.name,  {
+    font-size: 1.35em;
+    margin: 0;
+}
+.main-nav {
+    margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+    text-align: center;
+    display: block;
+    padding: 10px 15px;
+}
+.main-nav a, #portfolio, #certificates, #contact {
+    font-size: .95em;
+    color: black;
+    text-transform: uppercase;
+}
+
+.main-nav a:hover {
+    background-color: orangered;
+}
+
+/* ----CONTAINERS---- */
+
+.main-header {
+    padding: .5em 0em;
+}
+.main-footer {
+    text-align: center;
+}
+
+/* ----Media Queries---- */
+
+@media (min-width: 768px) {
+.main-header
+.main-nav     {
+    display: flex;
+    justify-content: center;
+}
+
+.main-header {
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 1024px) {
+.main-header {
+    flex-direction: row;
+    justify-content: space-between;
+}
+}
