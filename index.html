@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<hmtl>
+<html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mobile Responsive Website</title>
@@ -10,51 +10,55 @@
 </head>
 <body>
     <header class="main-header">
-        <div class="container">
-            <h1 class="name"><a href="#">Larry Rhodes</a></h1>
+            <h1 class="name"><a href="#top">Larry Rhodes</a></h1>
             <ul class="main-nav">
                 <li><a href="#">home</a></li>
                 <li><a href="#portfolio">portfolio</a></li>
                 <li><a href="#certificates">certificates</a></li>
                 <li><a href="#contact">contact</a></li>
             </ul>
-        </div>
     </header>
 
-    <div class="container" id="introduction">
-        <img src="images/responsive-layout-profile.png">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
+    <div class="container_one">
+        <img id="portrait" src="images/responsive-layout-profile.png">
+        <p id="greeting">Hi! I'm a front-end developer who loves responsive design and css. I recently finished a degree in front-end web development at Treehouse and am excited to put all my skills to use!</p>
     </div>
     
-    <div class="container">
+    <div class="container_two">
         <h3 id="portfolio"><a id="portfolio"><strong>portfolio</strong></a></h3>
-
+<div class="item1>"
         <img src="images/portfolio-1.png">
         <h2>Marketing Page</h2>
         <p>This project shows the font page of a marketing website meant for a specific business I'm interested in.</p>
-        
+</div>
+<div class="item2">        
         <img src="images/portfolio-2.png">
         <h2>Search Page</h2>
         <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-
+</div>
+<div class="item3">
         <img src="images/portfolio-3.png">
         <h2>Travel App</h2>
         <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        
+</div>
+<div class="item4">
         <img src="images/portfolio-4.png">
         <h2>Map of Favorite Spots</h2>
         <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-
+</div>
+<div class="item5">
         <img src="images/portfolio-5.png">
         <h2>Photo Gallery</h2>
         <p>This project shows pictures from a recent trip to the viewer and allows them to easily navigate through photos.</p>
-
+</div>
+<div class="item6">
         <img src="images/portfolio-6.png">
         <h2>Calculator</h2>
         <p>Someone can enter in the numbers they want, and press the big blue button and get the result.</p>
+</div>
     </div>
 
-    <div class="container">
+    <div class="container_three">
         <h3 id="certificates"><a id="certificates"><strong>professional certificates</strong></a></h3>
 
         <img src="images/certificate-3.png">
@@ -68,7 +72,6 @@
         <img src="images/certificate-1.png">
         <h2>Google Data Analytics Professional Certificate</h2>
         <p>Completed eight courses, developed by Google, that included hands-on, practice-based assessments designed to prepare for an introductory-level role in Data Analytics. Competent in tools and platforms including spreadsheets, SQL, Tableau, and R. Able to prepare, process, analyze, and share data for thoughtful action.</p>
-        
     </div>
 </body>
 
@@ -80,9 +83,10 @@
     <p>Email: <a href="mailto:webdevotter@gmail.com?subject=Front-End%20Developer%20Portfolio"><strong>webdevotter@gmail</strong></a></p>
 
     <hr>
-
-    <p><strong>Student name</strong></p>
-    <p><strong>BACK TO TOP</strong></p>
+    <div class="subfooter">
+        <p class="item8"><strong>Larry Rhodes</strong></p>
+        <p class="item9"><strong><a href="#top">BACK TO TOP</a></strong></p>
+    </div>    
 </footer>
 
-</hmtl>
+</html>
