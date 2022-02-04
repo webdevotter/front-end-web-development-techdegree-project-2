@@ -65,12 +65,12 @@ img {
     color: black;
     text-transform: uppercase;
 }
-.portfolio, #certificates, #contact {
+.portfolio, .certificates, .contact {
     text-align: center;
 }
 
 .main-nav a:hover {
-    background-color: orangered;
+    background-color: orange;
 }
 
 /* ----CONTAINERS---- */
@@ -121,5 +121,9 @@ img {
 @media (min-width: 1024px) {
     .container_two>* {
         flex: 1 1 341.33px;
+    }
+    #greeting {
+        font-size: 1.5em;
+        padding: 25px
     }
 }
