@@ -49,7 +49,10 @@ a {
 hr {
     width: 90%;
 }
-
+.subfooter {
+    margin: auto;
+    width: 90%;
+}
 img {
     max-width:100%;
 }
@@ -97,55 +100,50 @@ img {
 .item8, .item9 {
     flex: 1;
 }
-/* .item1, .item2, .item3,
-.item4, .item5, .item6 {
-    margin: 0 5px;
-} */
+
 
 /* ----Media Queries---- */
 
 @media (min-width: 768px) {
-.main-header
-.nav     {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-content: center;
-}   
-.container_one {
-    display: flex;
-    padding: 20px 20px;
-}
-#greeting {
-    order: -1;
-    text-align: left;
-    font-size: 1.25em;
-    padding: 25px;
-}
-.container_two, .container_three {
-    display: flex;
-    flex-wrap: wrap;
-}
-.container_two>* {
-    flex: 1 1 384px;
-    width: 90%;
-}
+    .name,
+    .nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }   
+    .container_one {
+        display: flex;
+        padding: 20px 20px;
+    }
+    #greeting {
+        order: -1;
+        text-align: left;
+        font-size: 1.25em;
+        padding: 25px;
+    }
+    .container_two, .container_three {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container_two>* {
+        flex: 1 1 384px;
+        width: 90%;
+    }
 
-/* .item1, .item2, .item3,
-.item4, .item5, .item6 {
-    flex: 1;
-    flex-direction: column;
-    margin: 0px 5px;
-} */
-
-.item7, .item8, .item9 {
-    flex: 1;
-}
+    .item7, .item8, .item9 {
+        flex: 1;
+    }
+    .subfooter {
+        margin: auto;
+        width: 90%;
+    }
 }
 
 @media (min-width: 1024px) {
     .container_two>* {
         flex: 1 1 341.33px;
+        align-items: center;
     }
     #greeting {
         font-size: 1.5em;
@@ -161,5 +159,39 @@ img {
     }
     .nav {
         line-height: 0;
+    }
+    
+    .item11 { 
+    display: none; /* hide once screen is 1024px*/
+    } 
+    .subfooter,
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: space-between;
+    }
+    .subfooter {
+        margin: auto;
+        width: 90%;
+    }
+    .footer-nav,
+    .item10  {
+        flex: 1;
+        text-transform: uppercase;
+        font-size: .95em;
+       
+    }
+}
+
+@media (max-width: 1023px)  {
+    .footer-nav {
+        display: none;
+    }
+    .footer-nav,
+    .item10  {
+        flex: 1;
+        text-transform: uppercase;
+        font-size: .95em;
     }
 }
