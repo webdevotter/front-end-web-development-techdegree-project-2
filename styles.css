@@ -29,8 +29,17 @@ h2, h3, a {
 a {
     text-decoration: none;
 }
-.main-header, .container_one, .main-footer {
+.main-header, .main-footer {
     background-color: #f7f7f7;
+}
+.container_one {
+    background-color: #333; /*Nightwing Rebirth SchemeColor.com*/
+}
+.container_three {
+    background-color: rgba(153, 204, 255, 0.3); /*Nightwing Rebirth SchemeColor.com*/
+}
+#greeting {
+    color: white;
 }
 
 .container_one, .container_two, .container_three { 
@@ -50,17 +59,17 @@ img {
     font-size: 1.35em;
     margin: 0;
 }
-.main-nav {
+.nav {
     margin-top: 5px;
 }
 
 .name a,
-.main-nav a {
+.nav a {
     text-align: center;
     display: block;
     padding: 10px 15px;
 }
-.main-nav a, #portfolio, #certificates, #contact {
+.nav a, #portfolio, #certificates, #contact {
     font-size: .95em;
     color: black;
     text-transform: uppercase;
@@ -69,7 +78,7 @@ img {
     text-align: center;
 }
 
-.main-nav a:hover {
+.nav a:hover {
     background-color: orange;
 }
 
@@ -93,7 +102,7 @@ img {
 
 @media (min-width: 768px) {
 .main-header
-.main-nav     {
+.nav     {
     display: flex;
     justify-content: center;
 }   
@@ -104,6 +113,8 @@ img {
 #greeting {
     order: -1;
     text-align: left;
+    font-size: 1.25em;
+    padding: 25px;
 }
 .container_two, .container_three {
     display: flex;
@@ -126,4 +137,12 @@ img {
         font-size: 1.5em;
         padding: 25px
     }
+/* @media (min-width: 1366px) {
+    .container_two>* {
+        flex: 1 1 500px;
+    }
+    #greeting {
+        font-size: 2em;
+        padding: 25px
+    } */
 }
