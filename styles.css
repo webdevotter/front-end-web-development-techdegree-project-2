@@ -65,6 +65,9 @@ img {
     color: black;
     text-transform: uppercase;
 }
+.portfolio, #certificates, #contact {
+    text-align: center;
+}
 
 .main-nav a:hover {
     background-color: orangered;
@@ -102,11 +105,21 @@ img {
     order: -1;
     text-align: left;
 }
+.container_two, .container_three {
+    display: flex;
+    flex-wrap: wrap;
+}
+.container_two>* {
+    flex: 1 1 384px;
+}
+
+.item7, .item8, .item9 {
+    flex: 1;
+}
 }
 
 @media (min-width: 1024px) {
-.main-header {
-    flex-direction: row;
-    justify-content: space-between;
-}
+    .container_two>* {
+        flex: 1 1 1 341.33px;
+    }
 }
