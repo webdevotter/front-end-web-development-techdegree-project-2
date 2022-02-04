@@ -120,6 +120,6 @@ img {
 
 @media (min-width: 1024px) {
     .container_two>* {
-        flex: 1 1 1 341.33px;
+        flex: 1 1 341.33px;
     }
 }
