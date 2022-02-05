@@ -29,8 +29,13 @@ h2, h3, a {
 a {
     text-decoration: none;
 }
-.main-header, .main-footer {
+.main-header, footer {
     background-color: #f7f7f7;
+}
+.portfolio, .certificates {
+    background-color: orange;
+    color: white;
+    box-shadow: 0px 5px 8px #888888;
 }
 .container_one {
     background-color: #333; /*Nightwing Rebirth SchemeColor.com*/
@@ -62,9 +67,6 @@ img {
     font-size: 1.35em;
     margin: 0;
 }
-.nav {
-    margin-top: 5px;
-}
 
 .name a,
 .nav a {
@@ -92,14 +94,14 @@ img {
 }
 .main-footer {
     text-align: center;
-    padding-top: 25px;
+    padding-top: 18.720px;
 }
 .subfooter {
     display: flex
 }
-.item8, .item9 {
+/* .item8, .item9 {
     flex: 1;
-}
+} */
 
 
 /* ----Media Queries---- */
@@ -129,8 +131,9 @@ img {
     .container_two>* {
         flex: 1 1 384px;
         width: 90%;
+        border: white solid 3px;
     }
-
+ 
     .item7, .item8, .item9 {
         flex: 1;
     }
@@ -143,8 +146,15 @@ img {
 @media (min-width: 1024px) {
     .container_two>* {
         flex: 1 1 341.33px;
-        align-items: center;
+        justify-content: space-between;
+        border: white solid 3px;
+    } 
+    .container_three {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
+       
     #greeting {
         font-size: 1.5em;
         padding: 25px
@@ -154,13 +164,11 @@ img {
         display: flex;
     }
 
-    .name , .nav {
-        flex: 1;
-    }
     .nav {
-        line-height: 0;
+        flex: 1;
+        justify-content: end;
     }
-    
+        
     .item11 { 
     display: none; /* hide once screen is 1024px*/
     } 
@@ -183,7 +191,7 @@ img {
        
     }
 }
-
+/* show new nav once screen is 1024px or larger*/
 @media (max-width: 1023px)  {
     .footer-nav {
         display: none;
