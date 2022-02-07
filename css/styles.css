@@ -108,7 +108,7 @@ img {
 
 /* ----Media Queries---- */
 @media (max-width: 767px) {
-    #home, #portfolio, #certificates, #contact {
+    #item11, #item12, #item13, #item14 {
         display: none;
     }
 }
