@@ -4,7 +4,7 @@
 body {
     font-family: 'Quicksand', sans-serif;
     line-height: 1.6;
-    color: black; 
+    color: black;
     margin: 0;
     flex-grow: 1;
 }
@@ -51,13 +51,20 @@ a {
     text-align: center;
 }
 
+
 hr {
     width: 90%;
 }
 .subfooter {
+    display: flex;
     margin: auto;
     width: 90%;
+    justify-content: space-between;
 }
+.back_to_top {
+    flex-basis: 100%;
+}
+
 img {
     max-width:100%;
 }
@@ -67,7 +74,6 @@ img {
     font-size: 1.35em;
     margin: 0;
 }
-
 .name a,
 .nav a {
     text-align: center;
@@ -82,7 +88,6 @@ img {
 .portfolio, .certificates, .contact {
     text-align: center;
 }
-
 .nav a:hover {
     background-color: orange;
 }
@@ -102,7 +107,11 @@ img {
 
 
 /* ----Media Queries---- */
-
+@media (max-width: 767px) {
+    #home, #portfolio, #certificates, #contact {
+        display: none;
+    }
+}
 @media (min-width: 768px) {
     .name,
     .nav {
@@ -130,7 +139,7 @@ img {
         width: 90%;
         border: white solid 3px;
     }
- 
+   
     .item7, .item8, .item9 {
         flex: 1;
     }
@@ -138,9 +147,9 @@ img {
         margin: auto;
         width: 90%;
     }
-    .item11 { 
+    #back_to_top { 
         display: none; /* hide once screen is 768px*/
-        } 
+        }  
     .subfooter .nav {
         flex: 1;
         justify-content: end;
@@ -173,7 +182,7 @@ img {
         justify-content: end;
     }
         
-    .item11 { 
+    #back_to_top { 
     display: none; /* hide once screen is 1024px*/
     } 
     .subfooter,
@@ -192,6 +201,6 @@ img {
         flex: 1;
         text-transform: uppercase;
         font-size: .95em;
-       
+        
     }
 }
